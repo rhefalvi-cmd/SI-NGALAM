@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singalam - Biografi & Perjuangan Hamid Rusdi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1596431215440-1536b3f7f893?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .timeline-dot {
+            position: relative;
+        }
+
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: #ef4444;
+            z-index: 0;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-4">
+                    <!-- Logo Utama Singalam -->
+                    <div class="h-14 overflow-hidden flex items-center">
+                        <img src="WhatsApp_Image_2026-04-27_at_20.36.16-removebg-preview.png" alt="Logo Singalam" class="h-full w-auto object-contain scale-125">
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 font-bold text-sm tracking-widest uppercase">
+                    <a href="#beranda" class="text-gray-600 hover:text-red-600 transition">Beranda</a>
+                    <a href="#biografi" class="text-gray-600 hover:text-red-600 transition">Biografi</a>
+                    <a href="#perjuangan" class="text-gray-600 hover:text-red-600 transition">Perjuangan</a>
+                    <a href="#galeri" class="text-gray-600 hover:text-red-600 transition">Galeri</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button class="md:hidden text-gray-600 p-2" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-gradient min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <div class="inline-block px-4 py-1 border border-red-500 rounded-full text-red-400 font-bold text-sm mb-6 tracking-widest uppercase animate-pulse">
+                Pahlawan Lokal Malang
+            </div>
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-tight tracking-tighter">
+                Mayor <span class="text-red-600">Hamid Rusdi</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto opacity-90 font-light leading-relaxed">
+                Kisah keberanian Sang Singa Malang yang mengobarkan semangat perlawanan di Bumi Arema.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#biografi" class="bg-red-600 hover:bg-red-700 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-lg shadow-red-900/20 transform hover:-translate-y-1">
+                    Pelajari Sejarah
+                </a>
+                <a href="#perjuangan" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-md transition-all transform hover:-translate-y-1">
+                    Jejak Perjuangan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Singkat Section -->
+    <section id="biografi" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?auto=format&fit=crop&q=80" alt="Ilustrasi Hamid Rusdi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 hidden lg:block">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">HR</div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase tracking-widest">Lahir</p>
+                                <p class="text-xl font-extrabold">1911, Malang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8 text-gray-900">Mengenal Lebih Dekat Sang Singa</h2>
+                    <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                        <p>
+                            Mayor Hamid Rusdi bukan sekadar nama jalan di Malang. Beliau adalah simbol perlawanan yang tak kenal lelah. Lahir di Sumbermanjing Kulon, masa mudanya dihabiskan dengan disiplin kerja di Kantor Pos Malang sebelum akhirnya terpanggil memanggul senjata.
+                        </p>
+                        <p class="font-semibold text-gray-800">
+                            "Keberanian beliau dalam memimpin taktik gerilya di wilayah pegunungan membuat pasukan Belanda merasa tidak pernah aman di Malang."
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="bg-gray-50 p-4 rounded-2xl">
+                                <h4 class="font-bold text-red-600 text-2xl">PETA</h4>
+                                <p class="text-sm font-medium">Latar Belakang Militer</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-2xl">
+                                <h4 class="font-bold text-red-600 text-2xl">Mayor</h4>
+                                <p class="text-sm font-medium">Pangkat Terakhir</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Perjuangan -->
+    <section id="perjuangan" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-6 uppercase tracking-tight">Kronologi Perjuangan</h2>
+                <p class="text-gray-600 text-lg">Catatan penting dalam perjalanan hidup Mayor Hamid Rusdi membela kedaulatan Indonesia.</p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Point 1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-1/4">
+                        <div class="text-5xl font-black text-red-100">1943</div>
+                        <div class="text-xl font-bold text-red-600 mt-2">Pendidikan Militer</div>
+                    </div>
+                    <div class="md:w-3/4 bg-white p-10 rounded-[2rem] shadow-sm border border-gray-100">
+                        <p class="text-xl text-gray-700 leading-relaxed">Bergabung dengan PETA di Bogor. Di sinilah ia mempelajari taktik tempur infanteri yang nantinya ia gunakan untuk melatih para pemuda Malang melawan penjajah.</p>
+                    </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-1/4">
+                        <div class="text-5xl font-black text-red-100">1947</div>
+                        <div class="text-xl font-bold text-red-600 mt-2">Pertahanan Malang</div>
+                    </div>
+                    <div class="md:w-3/4 bg-white p-10 rounded-[2rem] shadow-sm border border-gray-100">
+                        <p class="text-xl text-gray-700 leading-relaxed">Saat Agresi Militer Belanda I, Hamid Rusdi memimpin pasukannya untuk menghambat pergerakan musuh yang masuk ke wilayah Malang, menggunakan sistem pertahanan bumi hangus.</p>
+                    </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-1/4">
+                        <div class="text-5xl font-black text-red-100">1949</div>
+                        <div class="text-xl font-bold text-red-600 mt-2">Gugur Sebagai Kusuma</div>
+                    </div>
+                    <div class="md:w-3/4 bg-red-600 p-10 rounded-[2rem] shadow-xl text-white">
+                        <p class="text-xl leading-relaxed">8 Maret 1949, dalam sebuah penyergapan di Wonokerto, Bantur, Mayor Hamid Rusdi gugur bersama para pengawalnya setelah dikepung oleh pasukan khusus Belanda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="galeri" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl font-extrabold text-gray-900">Warisan Sejarah</h2>
+                    <p class="text-gray-500 mt-2">Bukti nyata penghormatan untuk Sang Mayor di Kota Malang.</p>
+                </div>
+                <div class="flex gap-2">
+                    <div class="w-12 h-1 bg-red-600"></div>
+                    <div class="w-4 h-1 bg-red-200"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative h-96 overflow-hidden rounded-3xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1542708993627-b6e5bbae43c4?auto=format&fit=crop&q=80" alt="Patung Hamid Rusdi" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-white border border-white px-6 py-2 rounded-full font-bold">Lihat Detail</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold">Monumen Simpang Balapan</h3>
+                    <p class="text-gray-500">Ikon kebanggaan warga Malang untuk mengenang sang pahlawan.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative h-96 overflow-hidden rounded-3xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1518173946687-a4c8a9b746f5?auto=format&fit=crop&q=80" alt="Jalan Hamid Rusdi" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-white border border-white px-6 py-2 rounded-full font-bold">Lihat Detail</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold">Kawasan Militer Hamid Rusdi</h3>
+                    <p class="text-gray-500">Pusat pendidikan TNI yang mengabadikan nama beliau.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative h-96 overflow-hidden rounded-3xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80" alt="Arsip" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-white border border-white px-6 py-2 rounded-full font-bold">Lihat Detail</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold">Dokumen & Arsip Nasional</h3>
+                    <p class="text-gray-500">Catatan sejarah militer masa kemerdekaan di Jawa Timur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <!-- Info Brand & Logo UM -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div class="h-20 p-2 bg-white rounded-xl shadow-lg">
+                            <img src="WhatsApp_Image_2026-04-27_at_20.36.16-removebg-preview.png" alt="Singalam Footer" class="h-full w-auto object-contain">
+                        </div>
+                        <div class="h-20 p-2 bg-white rounded-xl shadow-lg">
+                            <img src="Lambang-UM.jpg" alt="Logo UM" class="h-full w-auto object-contain">
+                        </div>
+                    </div>
+                    <h3 class="text-3xl font-black text-red-600 tracking-tighter mb-4">SINGALAM</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed max-w-md">
+                        Platform edukasi sejarah digital yang berdedikasi untuk melestarikan nilai-nilai kepahlawanan lokal Malang. Bekerja sama dengan Universitas Negeri Malang.
+                    </p>
+                </div>
+
+                <!-- Navigasi Cepat -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-l-4 border-red-600 pl-4">Navigasi</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#beranda" class="hover:text-red-500 transition">Beranda Utama</a></li>
+                        <li><a href="#biografi" class="hover:text-red-500 transition">Biografi Pahlawan</a></li>
+                        <li><a href="#perjuangan" class="hover:text-red-500 transition">Timeline Sejarah</a></li>
+                        <li><a href="#galeri" class="hover:text-red-500 transition">Galeri Monumen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-l-4 border-red-600 pl-4">Kerjasama</h4>
+                    <p class="text-gray-400 mb-4">Universitas Negeri Malang<br>Malang, Jawa Timur, Indonesia</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 SINGALAM (Sinau Sejarah Malang). Terinspirasi dari semangat Mayor Hamid Rusdi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-red-900/95 z-[100] flex flex-col items-center justify-center hidden">
+        <button class="absolute top-8 right-8 text-white text-5xl" id="close-menu-btn">&times;</button>
+        <div class="flex flex-col gap-10 text-center text-3xl font-extrabold text-white">
+            <a href="#beranda" class="mobile-link">BERANDA</a>
+            <a href="#biografi" class="mobile-link">BIOGRAFI</a>
+            <a href="#perjuangan" class="mobile-link">PERJUANGAN</a>
+            <a href="#galeri" class="mobile-link">GALERI</a>
+        </div>
+    </div>
+
+    <script>
+        // Menu Mobile Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white', 'shadow-md');
+                nav.classList.remove('bg-white/90');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('bg-white/90');
+            }
+        });
+    </script>
+</body>
+</html>
